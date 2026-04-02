@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #f0f2f5;
+  --bg-secondary: #ffffff;
+  --bg-sidebar: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-hover: #fcfbf8;
+  --bg-accent: #1a6b3c;
+  --bg-accent-hover: #15572f;
+  --bg-accent-light: rgba(26, 107, 60, 0.07);
+  --bg-input: #f0f2f5;
+  --bg-badge: #e8f5e9;
+  --bg-overlay: rgba(0, 0, 0, 0.5);
+
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b6b6b;
+  --text-tertiary: #9a9a9a;
+  --text-on-accent: #ffffff;
+  --text-accent: #1a6b3c;
+
+  --border-color: #e2e5ea;
+  --border-light: #ebedf0;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.04);
+
+  --green-50: #f1f8e9;
+  --green-100: #e8f5e9;
+  --green-200: #c8e6c9;
+  --green-300: #a5d6a7;
+  --green-400: #66bb6a;
+  --green-500: #1a6b3c;
+  --green-600: #145a30;
+  --green-700: #0e4422;
+
+  --blue-50: #eff6ff;
+  --blue-100: #dbeafe;
+  --blue-400: #60a5fa;
+  --blue-500: #3b82f6;
+  --blue-600: #2563eb;
+
+  --amber-50: #fffbeb;
+  --amber-100: #fef3c7;
+  --amber-400: #fbbf24;
+  --amber-500: #f59e0b;
+  --amber-600: #d97706;
+
+  --purple-50: #faf5ff;
+  --purple-100: #f3e8ff;
+  --purple-400: #c084fc;
+  --purple-500: #a855f7;
+  --purple-600: #9333ea;
+
+  --red-400: #ef5350;
+  --red-500: #f44336;
+  --orange-400: #ffa726;
+  --orange-500: #ff9800;
+
+  --status-completed: #1a6b3c;
+  --status-progress: #2563eb;
+  --status-pending: #d97706;
+  --status-overdue: #dc2626;
+
+  --chart-1: #0e4422;
+  --chart-2: #145a30;
+  --chart-3: #1a6b3c;
+  --chart-4: #22874d;
+  --chart-5: #34a85e;
+  --chart-6: #5ec97e;
+  --chart-7: #a5d6a7;
+
+  --chart-stripe-fg: #7ca888;
+  --chart-stripe-bg: #c2d8c6;
+
+  --scrollbar-track: #f0f2f5;
+  --scrollbar-thumb: #c5c9d0;
+
+  --sidebar-width: 230px;
+  --topbar-height: 68px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 22px;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0c0c0c;
+  --bg-secondary: #141414;
+  --bg-sidebar: #111111;
+  --bg-card: #1a1a1a;
+  --bg-card-hover: #222222;
+  --bg-accent: #2ecc71;
+  --bg-accent-hover: #27ae60;
+  --bg-accent-light: rgba(46, 204, 113, 0.08);
+  --bg-input: #1e1e1e;
+  --bg-badge: rgba(46, 204, 113, 0.12);
+  --bg-overlay: rgba(0, 0, 0, 0.7);
+
+  --text-primary: #f0f0f0;
+  --text-secondary: #888888;
+  --text-tertiary: #555555;
+  --text-on-accent: #0c0c0c;
+  --text-accent: #2ecc71;
+
+  --border-color: #252525;
+  --border-light: #1c1c1c;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.5), 0 2px 8px rgba(0, 0, 0, 0.3);
+
+  --green-50: rgba(46, 204, 113, 0.05);
+  --green-100: rgba(46, 204, 113, 0.08);
+  --green-200: rgba(46, 204, 113, 0.15);
+  --green-500: #2ecc71;
+  --green-600: #27ae60;
+  --green-700: #1e8449;
+
+  --blue-50: rgba(59, 130, 246, 0.05);
+  --blue-100: rgba(59, 130, 246, 0.1);
+
+  --amber-50: rgba(245, 158, 11, 0.05);
+  --amber-100: rgba(245, 158, 11, 0.1);
+
+  --purple-50: rgba(168, 85, 247, 0.05);
+  --purple-100: rgba(168, 85, 247, 0.1);
+
+  --status-completed: #2ecc71;
+  --status-progress: #60a5fa;
+  --status-pending: #fbbf24;
+  --status-overdue: #f87171;
+
+  --chart-1: #1e8449;
+  --chart-2: #239b56;
+  --chart-3: #27ae60;
+  --chart-4: #2ecc71;
+  --chart-5: #58d68d;
+  --chart-6: #82e0aa;
+  --chart-7: #abebc6;
+
+  --chart-stripe-fg: #2d6e3f;
+  --chart-stripe-bg: #1a3d24;
+
+  --scrollbar-track: #111111;
+  --scrollbar-thumb: #333333;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 3px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

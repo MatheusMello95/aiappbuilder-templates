@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --bg: #f0edff;
+  --bg-card: rgba(255, 255, 255, 0.5);
+  --bg-card-dark: #2C2C2C;
+  --bg-card-light: rgba(255, 255, 255, 0.7);
+  --text-primary: #1A1A1A;
+  --text-secondary: #6B6B6B;
+  --text-muted: #9B9B9B;
+  --green: #4CAF50;
+  --green-light: #E8F5E9;
+  --accent: #C8E6C9;
+  --border: rgba(0, 0, 0, 0.06);
+  --radius: 24px;
+  --radius-sm: 16px;
+  --radius-xs: 12px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background: var(--bg);
+  transition: background 0.3s, color 0.3s;
+}
+
+[data-theme="dark"] {
+  --bg: #121212;
+  --bg-card: #1E1E1E;
+  --bg-card-dark: #2C2C2C;
+  --bg-card-light: #1A1A1A;
+  --text-primary: #E8E8E8;
+  --text-secondary: #A0A0A0;
+  --text-muted: #6B6B6B;
+  --border: rgba(255, 255, 255, 0.08);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
