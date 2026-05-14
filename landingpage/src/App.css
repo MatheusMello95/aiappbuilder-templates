@@ -61,7 +61,7 @@
 
 .nav-cta:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 4px 15px rgba(33, 93, 246, 0.4);
 }
 
 .mobile-menu-btn {
@@ -101,7 +101,7 @@
   right: -15%;
   width: 700px;
   height: 700px;
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.2), transparent 65%);
+  background: radial-gradient(circle, rgba(33, 93, 246, 0.2), transparent 65%);
   border-radius: 50%;
   z-index: 0;
 }
@@ -139,8 +139,8 @@
   align-items: center;
   gap: 8px;
   padding: 8px 18px;
-  background: rgba(99, 102, 241, 0.15);
-  border: 1px solid rgba(99, 102, 241, 0.3);
+  background: rgba(33, 93, 246, 0.15);
+  border: 1px solid rgba(33, 93, 246, 0.3);
   border-radius: 50px;
   font-size: 14px;
   font-weight: 600;
@@ -171,7 +171,7 @@
 }
 
 .hero-text h1 .gradient-text {
-  background: linear-gradient(135deg, #818cf8, #c084fc, #f0abfc);
+  background: linear-gradient(135deg, #1846B9, #215FF6, #6FA0FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -202,12 +202,12 @@
   font-size: 17px;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 4px 20px rgba(33, 93, 246, 0.4);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(99, 102, 241, 0.5);
+  box-shadow: 0 8px 30px rgba(33, 93, 246, 0.5);
 }
 
 .btn-secondary {
@@ -466,7 +466,7 @@
   margin-bottom: 24px;
 }
 
-.feature-icon.blue { background: rgba(99, 102, 241, 0.1); }
+.feature-icon.blue { background: rgba(33, 93, 246, 0.1); }
 .feature-icon.purple { background: rgba(168, 85, 247, 0.1); }
 .feature-icon.green { background: rgba(34, 197, 94, 0.1); }
 .feature-icon.orange { background: rgba(249, 115, 22, 0.1); }
@@ -501,7 +501,7 @@
   right: -20%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.15), transparent 70%);
+  background: radial-gradient(circle, rgba(33, 93, 246, 0.15), transparent 70%);
   border-radius: 50%;
 }
 
@@ -517,7 +517,7 @@
 }
 
 .showcase-text .section-label {
-  background: rgba(99, 102, 241, 0.2);
+  background: rgba(33, 93, 246, 0.2);
 }
 
 .showcase-text h2 {
@@ -585,7 +585,7 @@
   color: #fff;
   padding: 16px 24px;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 10px 30px rgba(33, 93, 246, 0.4);
   text-align: center;
 }
 

@@ -500,7 +500,7 @@ function App() {
                     </defs>
                     <path d="M 20,140 A 90,90 0 1,1 240,140" fill="none" stroke="url(#gauge-stripes)" strokeWidth="22" strokeLinecap="round" />
                     <path d="M 20,140 A 90,90 0 1,1 240,140" fill="none" stroke="var(--status-progress)" strokeWidth="22" strokeLinecap="round" strokeDasharray={semiCircumference} strokeDashoffset={inProgressOffset} className="progress-gauge-fill" />
-                    <path d="M 20,140 A 90,90 0 1,1 240,140" fill="none" stroke="var(--bg-accent)" strokeWidth="22" strokeLinecap="round" strokeDasharray={semiCircumference} strokeDashoffset={completedOffset} className="progress-gauge-fill" />
+                    <path d="M 20,140 A 90,90 0 1,1 240,140" fill="none" stroke="var(--status-completed)" strokeWidth="22" strokeLinecap="round" strokeDasharray={semiCircumference} strokeDashoffset={completedOffset} className="progress-gauge-fill" />
                   </svg>
                   <div className="progress-text">
                     <div className="percentage">{Math.round(completedPct)}%</div>

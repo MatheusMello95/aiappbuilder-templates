@@ -3,8 +3,8 @@
   --text-h: #111827;
   --bg: #f3f4f6;
   --border: #e5e7eb;
-  --accent: #7c5cfc;
-  --accent-light: rgba(124, 92, 252, 0.08);
+  --accent: #215FF6;
+  --accent-light: rgba(33, 93, 246, 0.08);
 
   --sidebar-bg: #1e1b2e;
   --sidebar-border: #2d2a3e;
@@ -12,12 +12,12 @@
   --sidebar-heading: #f3f4f6;
   --sidebar-muted: #6b7280;
   --sidebar-hover: rgba(255, 255, 255, 0.06);
-  --sidebar-active: rgba(124, 92, 252, 0.15);
+  --sidebar-active: rgba(33, 93, 246, 0.15);
 
   --card-bg: #ffffff;
   --card-border: #e5e7eb;
   --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  --column-hover-bg: rgba(124, 92, 252, 0.04);
+  --column-hover-bg: rgba(33, 93, 246, 0.04);
   --count-bg: #f3f4f6;
   --search-bg: #f9fafb;
 
@@ -36,18 +36,18 @@
   --text-h: #f3f4f6;
   --bg: #111118;
   --border: #1f2937;
-  --accent: #8b7afc;
-  --accent-light: rgba(139, 122, 252, 0.1);
+  --accent: #3D73F7;
+  --accent-light: rgba(61, 115, 247, 0.1);
 
   --sidebar-bg: #0d0c14;
   --sidebar-border: #1a1926;
   --sidebar-hover: rgba(255, 255, 255, 0.04);
-  --sidebar-active: rgba(139, 122, 252, 0.12);
+  --sidebar-active: rgba(61, 115, 247, 0.12);
 
   --card-bg: #1a1926;
   --card-border: #2d2a3e;
   --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  --column-hover-bg: rgba(139, 122, 252, 0.06);
+  --column-hover-bg: rgba(61, 115, 247, 0.06);
   --count-bg: #2d2a3e;
   --search-bg: #1a1926;
 }

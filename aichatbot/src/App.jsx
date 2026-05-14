@@ -10,9 +10,9 @@ const LIGHT = {
   text: "#1C1917",
   textSecondary: "#78716C",
   textMuted: "#A8A29E",
-  accent: "#E8553A",
-  accentLight: "rgba(232, 85, 58, 0.08)",
-  accentGlow: "rgba(232, 85, 58, 0.12)",
+  accent: "#215FF6",
+  accentLight: "rgba(33, 93, 246, 0.08)",
+  accentGlow: "rgba(33, 93, 246, 0.12)",
   user: "#1C1917",
   userGlow: "rgba(28, 25, 23, 0.12)",
   ai: "#FFFFFF",
@@ -40,11 +40,11 @@ const DARK = {
   text: "#ECECEF",
   textSecondary: "#9898A0",
   textMuted: "#6A6A75",
-  accent: "#E8553A",
-  accentLight: "rgba(232, 85, 58, 0.12)",
-  accentGlow: "rgba(232, 85, 58, 0.15)",
-  user: "#E8553A",
-  userGlow: "rgba(232, 85, 58, 0.2)",
+  accent: "#215FF6",
+  accentLight: "rgba(33, 93, 246, 0.12)",
+  accentGlow: "rgba(33, 93, 246, 0.15)",
+  user: "#215FF6",
+  userGlow: "rgba(33, 93, 246, 0.2)",
   ai: "#1E1E23",
   aiBorder: "#2E2E35",
   headerBg: "rgba(20,20,24,0.9)",
@@ -91,8 +91,8 @@ const GlobalStyles = ({ theme }) => (
     }
 
     @keyframes breathe {
-      0%, 100% { transform: scale(1); box-shadow: 0 4px 20px ${theme === DARK ? "rgba(232,85,58,0.1)" : "rgba(0,0,0,0.06)"}; }
-      50% { transform: scale(1.03); box-shadow: 0 8px 32px ${theme === DARK ? "rgba(232,85,58,0.18)" : "rgba(0,0,0,0.1)"}; }
+      0%, 100% { transform: scale(1); box-shadow: 0 4px 20px ${theme === DARK ? "rgba(33,93,246,0.1)" : "rgba(0,0,0,0.06)"}; }
+      50% { transform: scale(1.03); box-shadow: 0 8px 32px ${theme === DARK ? "rgba(33,93,246,0.18)" : "rgba(0,0,0,0.1)"}; }
     }
 
     @keyframes fade-in-up {
@@ -113,6 +113,20 @@ const GlobalStyles = ({ theme }) => (
     @keyframes slide-in {
       from { transform: translateX(-100%); }
       to { transform: translateX(0); }
+    }
+
+    @keyframes border-light {
+      0%   { top: -40%; opacity: 0; }
+      15%  { opacity: 1; }
+      85%  { opacity: 1; }
+      100% { top: 100%; opacity: 0; }
+    }
+
+    @keyframes border-light-h {
+      0%   { left: -40%; opacity: 0; }
+      15%  { opacity: 1; }
+      85%  { opacity: 1; }
+      100% { left: 100%; opacity: 0; }
     }
 
     ::-webkit-scrollbar { width: 6px; }
@@ -386,6 +400,7 @@ const Sidebar = ({ open, onClose, chatHistory, activeChatIndex, onSelectChat, on
         transition: "transform 0.25s ease",
         boxShadow: open ? C.sidebarShadow : "none",
       } : {
+        position: "relative",
         width: open ? 280 : 0, minWidth: open ? 280 : 0,
         height: "100%", overflow: "hidden",
         background: C.surface,
@@ -395,6 +410,17 @@ const Sidebar = ({ open, onClose, chatHistory, activeChatIndex, onSelectChat, on
         flexShrink: 0, zIndex: 5,
       }}
     >
+    {open && (
+      <div style={{ position: "absolute", top: 0, right: 0, bottom: 0, width: 2, pointerEvents: "none", zIndex: 10 }} aria-hidden>
+        <div style={{
+          position: "absolute", left: -2, right: -2, height: "35%",
+          background: `linear-gradient(180deg, transparent 0%, ${C.accent} 50%, transparent 100%)`,
+          filter: "blur(1.5px)",
+          animation: "border-light 3.2s linear infinite",
+          willChange: "top, opacity",
+        }} />
+      </div>
+    )}
     <div style={{ padding: "16px 20px", borderBottom: `1px solid ${C.borderLight}`, display: "flex", alignItems: "center", justifyContent: "space-between", minWidth: 280 }}>
       <span style={{ fontSize: 14, fontWeight: 600, color: C.text }}>Chat History</span>
       <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
@@ -654,6 +680,15 @@ export default function AIChatInterface() {
           zIndex: 10, position: "relative", borderBottom: `1px solid ${C.borderLight}`,
         }}
       >
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 2, overflow: "hidden", pointerEvents: "none", zIndex: 10 }} aria-hidden>
+          <div style={{
+            position: "absolute", top: -2, bottom: -2, width: "35%",
+            background: `linear-gradient(90deg, transparent 0%, ${C.accent} 50%, transparent 100%)`,
+            filter: "blur(1.5px)",
+            animation: "border-light-h 4s linear infinite",
+            willChange: "left, opacity",
+          }} />
+        </div>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           {/* Hamburger / sidebar toggle */}
           <button
@@ -764,7 +799,7 @@ export default function AIChatInterface() {
                   background: C.surface,
                   transition: "all 0.2s ease",
                   boxShadow: inputFocused
-                    ? "0 0 0 3px rgba(232,85,58,0.06), 0 4px 20px rgba(0,0,0,0.08)"
+                    ? "0 0 0 3px rgba(33,93,246,0.06), 0 4px 20px rgba(0,0,0,0.08)"
                     : "0 2px 12px rgba(0,0,0,0.06)",
                 }}
               >
@@ -795,7 +830,7 @@ export default function AIChatInterface() {
                   cursor: input.trim() ? "pointer" : "default",
                   display: "flex", alignItems: "center", justifyContent: "center",
                   transition: "all 0.2s ease",
-                  boxShadow: input.trim() ? "0 4px 14px rgba(232,85,58,0.25)" : "none",
+                  boxShadow: input.trim() ? "0 4px 14px rgba(33,93,246,0.25)" : "none",
                   flexShrink: 0,
                   transform: input.trim() ? "scale(1)" : "scale(0.92)",
                 }}
@@ -871,7 +906,7 @@ export default function AIChatInterface() {
                   background: C.surface,
                   transition: "all 0.2s ease",
                   boxShadow: inputFocused
-                    ? "0 0 0 3px rgba(232,85,58,0.06), 0 4px 16px rgba(0,0,0,0.06)"
+                    ? "0 0 0 3px rgba(33,93,246,0.06), 0 4px 16px rgba(0,0,0,0.06)"
                     : "0 2px 8px rgba(0,0,0,0.05)",
                 }}
               >
@@ -902,7 +937,7 @@ export default function AIChatInterface() {
                   cursor: input.trim() || isStreaming ? "pointer" : "default",
                   display: "flex", alignItems: "center", justifyContent: "center",
                   transition: "all 0.2s ease",
-                  boxShadow: (input.trim() || isStreaming) ? "0 4px 14px rgba(232,85,58,0.25)" : "none",
+                  boxShadow: (input.trim() || isStreaming) ? "0 4px 14px rgba(33,93,246,0.25)" : "none",
                   flexShrink: 0,
                   transform: (input.trim() || isStreaming) ? "scale(1)" : "scale(0.92)",
                 }}

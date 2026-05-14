@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-  --bg: #f0edff;
-  --bg-card: rgba(255, 255, 255, 0.5);
+  --bg: #F8FAFE;
+  --bg-card: #FFFFFF;
   --bg-card-dark: #2C2C2C;
-  --bg-card-light: rgba(255, 255, 255, 0.7);
+  --bg-card-light: #F8FAFE;
   --text-primary: #1A1A1A;
   --text-secondary: #6B6B6B;
   --text-muted: #9B9B9B;
-  --green: #4CAF50;
-  --green-light: #E8F5E9;
-  --accent: #C8E6C9;
+  --green: #215FF6;
+  --green-light: #E8EFFE;
+  --accent: #C2D9FE;
   --border: rgba(0, 0, 0, 0.06);
   --radius: 24px;
   --radius-sm: 16px;
@@ -27,8 +27,8 @@
 }
 
 [data-theme="dark"] {
-  --bg: #121212;
-  --bg-card: #1E1E1E;
+  --bg: #0A0E1A;
+  --bg-card: #141B2D;
   --bg-card-dark: #2C2C2C;
   --bg-card-light: #1A1A1A;
   --text-primary: #E8E8E8;

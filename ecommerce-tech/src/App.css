@@ -112,7 +112,7 @@
 }
 
 .search-input:focus {
-  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.12);
+  box-shadow: 0 0 0 3px rgba(33, 93, 246, 0.12);
   border-color: var(--green);
 }
 
@@ -334,7 +334,7 @@
   justify-content: center;
   flex-shrink: 0;
   margin-top: 2px;
-  box-shadow: 0 0 16px rgba(76, 175, 80, 0.4);
+  box-shadow: 0 0 16px rgba(33, 93, 246, 0.4);
 }
 
 .hero-feature-label {
@@ -352,7 +352,7 @@
 }
 
 .hero-cta {
-  background: linear-gradient(135deg, #4CAF50 0%, #43A047 100%);
+  background: linear-gradient(135deg, #215FF6 0%, #1846B9 100%);
   color: white;
   padding: 16px 34px;
   border-radius: 50px;
@@ -362,14 +362,14 @@
   transition: all 0.3s;
   margin-bottom: auto;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 16px rgba(76, 175, 80, 0.25);
+  box-shadow: 0 4px 16px rgba(33, 93, 246, 0.25);
   backdrop-filter: blur(4px);
 }
 
 .hero-cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(76, 175, 80, 0.45);
-  background: linear-gradient(135deg, #56C85A 0%, #4CAF50 100%);
+  box-shadow: 0 8px 28px rgba(33, 93, 246, 0.45);
+  background: linear-gradient(135deg, #3D73F7 0%, #215FF6 100%);
 }
 
 .hero-bottom {
@@ -881,7 +881,7 @@
   gap: 6px;
   padding: 8px 20px;
   border-radius: 50px;
-  border: 1px solid rgba(76, 175, 80, 0.2);
+  border: 1px solid rgba(33, 93, 246, 0.2);
   transition: all 0.25s;
 }
 
@@ -1112,7 +1112,7 @@
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(76, 175, 80, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(33, 93, 246, 0.15) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -1177,9 +1177,9 @@
 }
 
 .newsletter-btn:hover {
-  background: #43A047;
+  background: #1846B9;
   transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(76, 175, 80, 0.4);
+  box-shadow: 0 4px 16px rgba(33, 93, 246, 0.4);
 }
 
 .newsletter-note {
@@ -1373,7 +1373,7 @@
 }
 
 [data-theme="dark"] .search-input:focus {
-  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+  box-shadow: 0 0 0 3px rgba(33, 93, 246, 0.2);
 }
 
 [data-theme="dark"] .nav-icon-btn:hover {

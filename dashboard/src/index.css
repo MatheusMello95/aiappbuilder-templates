@@ -14,9 +14,9 @@
   --bg-sidebar: #ffffff;
   --bg-card: #ffffff;
   --bg-card-hover: #fcfbf8;
-  --bg-accent: #1a6b3c;
-  --bg-accent-hover: #15572f;
-  --bg-accent-light: rgba(26, 107, 60, 0.07);
+  --bg-accent: #215FF6;
+  --bg-accent-hover: #3D73F7;
+  --bg-accent-light: rgba(33, 93, 246, 0.07);
   --bg-input: #f0f2f5;
   --bg-badge: #e8f5e9;
   --bg-overlay: rgba(0, 0, 0, 0.5);
@@ -25,7 +25,7 @@
   --text-secondary: #6b6b6b;
   --text-tertiary: #9a9a9a;
   --text-on-accent: #ffffff;
-  --text-accent: #1a6b3c;
+  --text-accent: #215FF6;
 
   --border-color: #e2e5ea;
   --border-light: #ebedf0;
@@ -34,14 +34,14 @@
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
   --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.04);
 
-  --green-50: #f1f8e9;
-  --green-100: #e8f5e9;
-  --green-200: #c8e6c9;
-  --green-300: #a5d6a7;
-  --green-400: #66bb6a;
-  --green-500: #1a6b3c;
-  --green-600: #145a30;
-  --green-700: #0e4422;
+  --green-50: #f0fdf4;
+  --green-100: #dcfce7;
+  --green-200: #bbf7d0;
+  --green-300: #86efac;
+  --green-400: #4ade80;
+  --green-500: #22c55e;
+  --green-600: #16a34a;
+  --green-700: #15803d;
 
   --blue-50: #eff6ff;
   --blue-100: #dbeafe;
@@ -66,21 +66,21 @@
   --orange-400: #ffa726;
   --orange-500: #ff9800;
 
-  --status-completed: #1a6b3c;
+  --status-completed: #16a34a;
   --status-progress: #2563eb;
   --status-pending: #d97706;
   --status-overdue: #dc2626;
 
-  --chart-1: #0e4422;
-  --chart-2: #145a30;
-  --chart-3: #1a6b3c;
-  --chart-4: #22874d;
-  --chart-5: #34a85e;
-  --chart-6: #5ec97e;
-  --chart-7: #a5d6a7;
+  --chart-1: #1e3a8a;
+  --chart-2: #1d4ed8;
+  --chart-3: #215FF6;
+  --chart-4: #3D73F7;
+  --chart-5: #60a5fa;
+  --chart-6: #93c5fd;
+  --chart-7: #bfdbfe;
 
-  --chart-stripe-fg: #7ca888;
-  --chart-stripe-bg: #c2d8c6;
+  --chart-stripe-fg: #7c91d4;
+  --chart-stripe-bg: #c6d4ee;
 
   --scrollbar-track: #f0f2f5;
   --scrollbar-thumb: #c5c9d0;
@@ -99,18 +99,18 @@
   --bg-sidebar: #111111;
   --bg-card: #1a1a1a;
   --bg-card-hover: #222222;
-  --bg-accent: #2ecc71;
-  --bg-accent-hover: #27ae60;
-  --bg-accent-light: rgba(46, 204, 113, 0.08);
+  --bg-accent: #215FF6;
+  --bg-accent-hover: #3D73F7;
+  --bg-accent-light: rgba(33, 93, 246, 0.12);
   --bg-input: #1e1e1e;
-  --bg-badge: rgba(46, 204, 113, 0.12);
+  --bg-badge: rgba(33, 93, 246, 0.16);
   --bg-overlay: rgba(0, 0, 0, 0.7);
 
   --text-primary: #f0f0f0;
   --text-secondary: #888888;
   --text-tertiary: #555555;
-  --text-on-accent: #0c0c0c;
-  --text-accent: #2ecc71;
+  --text-on-accent: #ffffff;
+  --text-accent: #3D73F7;
 
   --border-color: #252525;
   --border-light: #1c1c1c;
@@ -119,12 +119,12 @@
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.2);
   --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.5), 0 2px 8px rgba(0, 0, 0, 0.3);
 
-  --green-50: rgba(46, 204, 113, 0.05);
-  --green-100: rgba(46, 204, 113, 0.08);
-  --green-200: rgba(46, 204, 113, 0.15);
-  --green-500: #2ecc71;
-  --green-600: #27ae60;
-  --green-700: #1e8449;
+  --green-50: rgba(34, 197, 94, 0.05);
+  --green-100: rgba(34, 197, 94, 0.08);
+  --green-200: rgba(34, 197, 94, 0.15);
+  --green-500: #22c55e;
+  --green-600: #16a34a;
+  --green-700: #15803d;
 
   --blue-50: rgba(59, 130, 246, 0.05);
   --blue-100: rgba(59, 130, 246, 0.1);
@@ -135,21 +135,21 @@
   --purple-50: rgba(168, 85, 247, 0.05);
   --purple-100: rgba(168, 85, 247, 0.1);
 
-  --status-completed: #2ecc71;
+  --status-completed: #22c55e;
   --status-progress: #60a5fa;
   --status-pending: #fbbf24;
   --status-overdue: #f87171;
 
-  --chart-1: #1e8449;
-  --chart-2: #239b56;
-  --chart-3: #27ae60;
-  --chart-4: #2ecc71;
-  --chart-5: #58d68d;
-  --chart-6: #82e0aa;
-  --chart-7: #abebc6;
+  --chart-1: #1e40af;
+  --chart-2: #1d4ed8;
+  --chart-3: #215FF6;
+  --chart-4: #3D73F7;
+  --chart-5: #60a5fa;
+  --chart-6: #93c5fd;
+  --chart-7: #bfdbfe;
 
-  --chart-stripe-fg: #2d6e3f;
-  --chart-stripe-bg: #1a3d24;
+  --chart-stripe-fg: #2d4a8a;
+  --chart-stripe-bg: #1a234d;
 
   --scrollbar-track: #111111;
   --scrollbar-thumb: #333333;

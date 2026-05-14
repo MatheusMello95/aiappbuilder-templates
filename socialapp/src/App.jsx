@@ -17,9 +17,9 @@ const T = {
   card: "#151519",
   cardLight: "#1C1C22",
   border: "rgba(255,255,255,0.06)",
-  accent: "#E8A838",       // warm amber
-  accentGrad: "linear-gradient(135deg, #E8A838, #D4842A)",
-  accentSoft: "rgba(232,168,56,0.12)",
+  accent: "#215FF6",       // warm amber
+  accentGrad: "linear-gradient(135deg, #215FF6, #1846B9)",
+  accentSoft: "rgba(33,93,246,0.12)",
   purple: "#7C5CFC",
   text: "#F0F0F2",
   textSec: "#A0A0B0",
@@ -27,13 +27,13 @@ const T = {
   heart: "#FF4D6A",
   green: "#22C55E",
   shadow: "0 4px 20px rgba(0,0,0,0.5)",
-  ring: "linear-gradient(135deg, #E8A838, #D4842A, #C06820)",
+  ring: "linear-gradient(135deg, #215FF6, #1846B9, #0A2D7A)",
 };
 
 // ─── USERS ──────────────────────────────────────────────────
 const USERS = [
-  { id: "u1", name: "Mello", handle: "@mello", avatar: "M", photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&h=200&fit=crop&crop=face", gradient: "linear-gradient(135deg, #E8A838, #D4842A)", bio: "Building the future with code. Full-stack dev & creative technologist.", followers: 2847, following: 412, posts: 126, views: "234K", likes: "89K", verified: true },
-  { id: "u2", name: "Budiarti Rohman", handle: "@budiartirhm", avatar: "B", photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face", gradient: "linear-gradient(135deg, #E8A838, #C06820)", bio: "Entrepreneur | Investor | Visionary\n@budiartidesign - Building the future\nVisit us budiartigroup.com", followers: 1200000, following: 868, posts: 2685, views: "868K", likes: "234K", verified: true },
+  { id: "u1", name: "Mello", handle: "@mello", avatar: "M", photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&h=200&fit=crop&crop=face", gradient: "linear-gradient(135deg, #215FF6, #1846B9)", bio: "Building the future with code. Full-stack dev & creative technologist.", followers: 2847, following: 412, posts: 126, views: "234K", likes: "89K", verified: true },
+  { id: "u2", name: "Budiarti Rohman", handle: "@budiartirhm", avatar: "B", photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face", gradient: "linear-gradient(135deg, #215FF6, #0A2D7A)", bio: "Entrepreneur | Investor | Visionary\n@budiartidesign - Building the future\nVisit us budiartigroup.com", followers: 1200000, following: 868, posts: 2685, views: "868K", likes: "234K", verified: true },
   { id: "u3", name: "Michael Torres", handle: "@michaelt", avatar: "M", photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face", gradient: "linear-gradient(135deg, #3B82F6, #6366F1)", bio: "Photographer & visual storyteller. Finding beauty in chaos.", followers: 45200, following: 312, posts: 890, views: "1.2M", likes: "456K", verified: true },
   { id: "u4", name: "Cornelia", handle: "@cornelia_a", avatar: "C", photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face", gradient: "linear-gradient(135deg, #EC4899, #A855F7)", bio: "Travel creator. 40+ countries explored.", followers: 89000, following: 234, posts: 567, views: "2.1M", likes: "780K", verified: false },
   { id: "u5", name: "Kim_20", handle: "@kim_20", avatar: "K", photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop&crop=face", gradient: "linear-gradient(135deg, #F59E0B, #EF4444)", bio: "Fashion & street culture.", followers: 32000, following: 188, posts: 345, views: "560K", likes: "120K", verified: false },
@@ -347,7 +347,7 @@ const DiscoverPage = ({ isMobile }) => {
           <button key={t} onClick={()=>setTab(t)} style={{
             padding:"7px 16px", borderRadius:20, border:"none",
             background: tab===t ? T.accent : T.card,
-            color: tab===t ? "#000" : T.textSec,
+            color: tab===t ? "#FFF" : T.textSec,
             fontSize:12, fontWeight:700, cursor:"pointer", whiteSpace:"nowrap",
             transition:"all 0.15s",
           }}>{t}</button>
@@ -418,7 +418,7 @@ const ActivityPage = () => {
           {n.imgIdx!=null ? (
             <div style={{ width:44, height:44, borderRadius:10, overflow:"hidden", flexShrink:0 }}><Photo idx={n.imgIdx} radius={0} /></div>
           ) : (
-            <button style={{ padding:"6px 16px", borderRadius:10, background:T.accentGrad, border:"none", color:"#000", fontSize:12, fontWeight:700, cursor:"pointer" }}>Follow</button>
+            <button style={{ padding:"6px 16px", borderRadius:10, background:T.accentGrad, border:"none", color:"#FFF", fontSize:12, fontWeight:700, cursor:"pointer" }}>Follow</button>
           )}
         </div>
       ))}
@@ -470,7 +470,7 @@ const MessagesPage = ({ isMobile }) => {
           <div style={{ flex:1, overflowY:"auto", padding:"16px 12px", display:"flex", flexDirection:"column", gap:6 }}>
             {cM.map(m=>{const me=m.from==="u1"; return (
               <div key={m.id} style={{ display:"flex", justifyContent:me?"flex-end":"flex-start" }}>
-                <div style={{ maxWidth:"75%", padding:"10px 14px", borderRadius:me?"16px 16px 4px 16px":"16px 16px 16px 4px", background:me?T.accentGrad:T.card, border:me?"none":`1px solid ${T.border}`, color:me?"#000":T.text, fontSize:14, lineHeight:1.5, fontWeight:me?600:400 }}>{m.text}</div>
+                <div style={{ maxWidth:"75%", padding:"10px 14px", borderRadius:me?"16px 16px 4px 16px":"16px 16px 16px 4px", background:me?T.accentGrad:T.card, border:me?"none":`1px solid ${T.border}`, color:me?"#FFF":T.text, fontSize:14, lineHeight:1.5, fontWeight:me?600:400 }}>{m.text}</div>
               </div>
             );})}
             <div ref={endRef} />
@@ -503,7 +503,7 @@ const ProfilePage = ({ userId="u1", onBack, isMobile }) => {
     <div>
       {/* ── Warm cover header area ── */}
       <div style={{
-        background: `linear-gradient(to bottom, ${user.gradient.includes("#E8A838") ? "rgba(180,120,40,0.25)" : "rgba(100,60,30,0.2)"} 0%, ${T.bg} 100%)`,
+        background: `linear-gradient(to bottom, ${user.gradient.includes("#215FF6") ? "rgba(20,55,180,0.25)" : "rgba(10,30,90,0.2)"} 0%, ${T.bg} 100%)`,
         paddingBottom: 0,
       }}>
         {/* Top nav row */}
@@ -519,7 +519,7 @@ const ProfilePage = ({ userId="u1", onBack, isMobile }) => {
           <div style={{
             width:86, height:86, borderRadius:"50%",
             background:T.ring, padding:3,
-            boxShadow:"0 0 24px rgba(232,168,56,0.2)",
+            boxShadow:"0 0 24px rgba(33,93,246,0.2)",
           }}>
             <div style={{ width:"100%", height:"100%", borderRadius:"50%", background:T.bg, padding:2 }}>
               <div style={{
@@ -545,7 +545,7 @@ const ProfilePage = ({ userId="u1", onBack, isMobile }) => {
               <button style={{ padding:"8px 32px", borderRadius:10, background:T.card, border:`1px solid ${T.border}`, color:T.text, fontSize:13, fontWeight:700, cursor:"pointer" }}>Edit Profile</button>
             ) : (
               <>
-                <button style={{ padding:"8px 22px", borderRadius:10, background:T.accentGrad, border:"none", color:"#000", fontSize:12, fontWeight:700, cursor:"pointer" }}>Following</button>
+                <button style={{ padding:"8px 22px", borderRadius:10, background:T.accentGrad, border:"none", color:"#FFF", fontSize:12, fontWeight:700, cursor:"pointer" }}>Following</button>
                 <button style={{ padding:"8px 22px", borderRadius:10, background:T.card, border:`1px solid ${T.border}`, color:T.text, fontSize:12, fontWeight:700, cursor:"pointer" }}>Message</button>
               </>
             )}
@@ -682,7 +682,7 @@ const DesktopSidebar = ({ page, setPage, goToProfile }) => (
   }}>
     {/* User */}
     <div onClick={()=>goToProfile("u1")} style={{ display:"flex", flexDirection:"column", alignItems:"center", padding:"0 0 20px", cursor:"pointer", borderBottom:`1px solid ${T.border}`, marginBottom:10 }}>
-      <div style={{ width:56, height:56, borderRadius:"50%", background:T.ring, padding:2, boxShadow:"0 0 20px rgba(232,168,56,0.25)" }}>
+      <div style={{ width:56, height:56, borderRadius:"50%", background:T.ring, padding:2, boxShadow:"0 0 20px rgba(33,93,246,0.25)" }}>
         <div style={{ width:"100%", height:"100%", borderRadius:"50%", background:T.card, padding:2, display:"flex", alignItems:"center", justifyContent:"center" }}>
           <div style={{ width:"100%", height:"100%", borderRadius:"50%", background:ME.gradient, display:"flex", alignItems:"center", justifyContent:"center", fontSize:20, fontWeight:800, color:"#fff", overflow:"hidden", position:"relative" }}>
             {ME.photo ? <img src={ME.photo} alt="" style={{ position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"cover" }} /> : ME.avatar}
@@ -723,9 +723,9 @@ const DesktopSidebar = ({ page, setPage, goToProfile }) => (
     <button style={{
       display:"flex", alignItems:"center", justifyContent:"center", gap:7,
       padding:"10px 0", borderRadius:12, border:"none",
-      background:T.accentGrad, color:"#000",
+      background:T.accentGrad, color:"#FFF",
       fontSize:13, fontWeight:700, cursor:"pointer",
-      boxShadow:"0 4px 16px rgba(232,168,56,0.3)",
+      boxShadow:"0 4px 16px rgba(33,93,246,0.3)",
       fontFamily:"'Inter',sans-serif", margin:"8px 0 12px",
     }}>
       <I.plus size={16} /> New Post

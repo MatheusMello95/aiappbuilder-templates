@@ -9,7 +9,7 @@ export default function Navbar({ dark, onToggleDark }) {
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" className="logo-icon">
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" fill="currentColor"/>
               <path d="M8 12c0-2.21 1.79-4 4-4s4 1.79 4 4" stroke="var(--bg)" strokeWidth="1.5" fill="none"/>
-              <circle cx="12" cy="14" r="2" fill="#4CAF50"/>
+              <circle cx="12" cy="14" r="2" fill="#215FF6"/>
             </svg>
             <span className="logo-text">Slashdev.</span>
           </div>

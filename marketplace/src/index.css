@@ -13,24 +13,24 @@
   --bg-card: #ffffff;
   --bg-card-hover: #faf8fe;
   --bg-input: #f6f3fb;
-  --bg-badge: rgba(139, 92, 246, 0.1);
+  --bg-badge: rgba(61, 115, 247, 0.1);
   --bg-badge-green: rgba(34, 197, 94, 0.1);
   --bg-badge-amber: rgba(245, 158, 11, 0.1);
 
   --text-primary: #1a1a2e;
   --text-secondary: #4a4a64;
   --text-muted: #7a7a94;
-  --text-accent: #7c3aed;
+  --text-accent: #215FF6;
 
-  --accent: #7c3aed;
-  --accent-hover: #6d28d9;
-  --accent-glow: rgba(124, 58, 237, 0.2);
-  --accent-soft: rgba(124, 58, 237, 0.08);
+  --accent: #215FF6;
+  --accent-hover: #1846B9;
+  --accent-glow: rgba(33, 93, 246, 0.2);
+  --accent-soft: rgba(33, 93, 246, 0.08);
 
   --green: #16a34a;
   --amber: #d97706;
   --rose: #e11d48;
-  --cyan: #0891b2;
+  --cyan: #3D73F7;
 
   --border: #ddd6ec;
   --border-hover: #cec6de;
@@ -44,7 +44,7 @@
   --shadow-sm: 0 2px 8px rgba(100, 60, 150, 0.08);
   --shadow-md: 0 4px 20px rgba(100, 60, 150, 0.1);
   --shadow-lg: 0 8px 32px rgba(100, 60, 150, 0.14);
-  --shadow-glow: 0 0 40px rgba(124, 58, 237, 0.1);
+  --shadow-glow: 0 0 40px rgba(33, 93, 246, 0.1);
 
   --header-bg: rgba(244, 240, 252, 0.85);
   --header-bg-solid: rgba(244, 240, 252, 0.97);
@@ -73,24 +73,24 @@
   --bg-card: #151520;
   --bg-card-hover: #1c1c2a;
   --bg-input: #181824;
-  --bg-badge: rgba(139, 92, 246, 0.15);
+  --bg-badge: rgba(61, 115, 247, 0.15);
   --bg-badge-green: rgba(34, 197, 94, 0.15);
   --bg-badge-amber: rgba(245, 158, 11, 0.15);
 
   --text-primary: #f3f4f6;
   --text-secondary: #a1a1b5;
   --text-muted: #6b6b82;
-  --text-accent: #a78bfa;
+  --text-accent: #6FA0FF;
 
-  --accent: #8b5cf6;
-  --accent-hover: #7c3aed;
-  --accent-glow: rgba(139, 92, 246, 0.25);
-  --accent-soft: rgba(139, 92, 246, 0.1);
+  --accent: #3D73F7;
+  --accent-hover: #215FF6;
+  --accent-glow: rgba(61, 115, 247, 0.25);
+  --accent-soft: rgba(61, 115, 247, 0.1);
 
   --green: #22c55e;
   --amber: #f59e0b;
   --rose: #f43f5e;
-  --cyan: #06b6d4;
+  --cyan: #5588F8;
 
   --border: #252535;
   --border-hover: #35354a;
@@ -98,7 +98,7 @@
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 40px rgba(139, 92, 246, 0.15);
+  --shadow-glow: 0 0 40px rgba(61, 115, 247, 0.15);
 
   --header-bg: rgba(11, 11, 18, 0.8);
   --header-bg-solid: rgba(11, 11, 18, 0.95);
